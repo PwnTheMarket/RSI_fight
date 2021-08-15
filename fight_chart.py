@@ -66,7 +66,7 @@ class Chart:
         FRAMES_SKIPPED = math.floor(total_rows / FRAMES)
         anim = FuncAnimation(fig, animate, interval=50, frames=min(total_rows, FRAMES), blit=True)
         #plt.show()
-        anim.save("{}_simpleRSI.mp4".format(PLOT_DF.iloc[0]['ticker']), writer="ffmpeg")
+        anim.save("{}_wildersRSI.mp4".format(PLOT_DF.iloc[0]['ticker']), writer="ffmpeg")
 
 def animate(i):
     # Only plot line 1 every FRAMES_SKIPPED interval
